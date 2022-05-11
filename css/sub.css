@@ -679,5 +679,8 @@ body {
   #character br {
     display: none;
   }
+  #support ul li dl dd {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sub.css.map */
