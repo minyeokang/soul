@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin fixing {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+@mixin absol {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@mixin flexing {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+$primaryColor: #fff;
+$borderColor: #000;
+
+
+body {
+    font-size: 1.6rem;
+    font-family: 'LeferiPoint-SpecialItalicA';
+    color: $primaryColor;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background: $borderColor;
+}
+
+.container {
+    background: url('../images/common/body_bg.jpg') repeat-y top left;
+}
+
+.inner {
+    max-width: calc(100% - 10.416%);
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 4.0rem;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    background: url('../images/common/icon_star.png') no-repeat left bottom;
+    line-height: 1;
+}
